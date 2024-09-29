@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff; /* لون الخلفية الفاتحة */
+  background-size: cover;
+  background-position: center;
+  color: #333333; /* لون النص الداكن */
+}
+
+.wrapper {
+  background: #f8f8f8; /* خلفية فاتحة للعنصر */
+  border: 2px solid rgba(0, 0, 0, .1); /* لون الحدود الداكن */
+  color: #333333; /* لون النص الداخلي */
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  padding: 30px 40px;
+  border-radius: 10px;
+}
+
+
+.wrapper .input-box {
+  width: 100%;
+  position: relative;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: #ffffff; /* خلفية فاتحة للمدخل */
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, .2); /* لون حدود المدخل */
+
+  font-size: 16px;
+
+  color: #333333; /* لون النص */
+  padding: 20px 40px 20px 20px;
+  text-align: right; /* لجعل الـ placeholder يبدأ من اليمين */
+}
+
+.input-box input::placeholder {
+  color: #aaaaaa; /* لون placeholder الداكن */
+  padding-right: 10px;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #333333; /* لون الأيقونة الداكنة */
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label {
+  display: flex;
+  align-items: center; /* لمحاذاة مربع "تذكرني" مع النص في الوسط */
+  flex-direction: row-reverse; /* عكس الاتجاه بين المربع والنص */
+}
+
+.remember-forgot label input {
+  accent-color: #333333; /* لون المربع */
+  margin-left: 3px;
+}
+
+.remember-forgot a {
+  text-decoration: none;
+  color: #333333; /* لون النص للرابط الداكن */
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 50px;
+  background: #1c89ff; /* لون الزر الفاتح */
+  border: none;
+  outline: none;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff; /* لون النص داخل الزر */
+  font-weight: 600;
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color: #007bff; /* لون الرابط الفاتح */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+/* Dark Mode (الوضع الداكن) */
+.dark-mode {
+    background-color: #121212; /* خلفية داكنة عامة */
+    color: #e0e0e0; /* نص فاتح */
+}
+
+
+/* Sidebar */
+.dark-mode .sidebar {
+    background-color: #2a2a2a; /* خلفية الداكنة للـ sidebar */
+    color: #cfcfcf; /* لون النص */
+    border-right: 1px solid #444; /* خط فاصل على اليمين */
+}
+
+/* Tables */
+.dark-mode table {
+    background-color: #232323; /* خلفية الجدول الداكنة */
+    color: #dddddd; /* لون النص */
+    border: 1px solid #555; /* إطار الجدول */
+}
+
+.dark-mode th, .dark-mode td {
+    border: 1px solid #444; /* إطار الخلايا */
+}
+
+.dark-mode th {
+    background-color: #333333; /* خلفية عنوان الجدول */
+}
+
+.dark-mode tr:nth-child(even) {
+    background-color: #2e2e2e; /* خلفية داكنة للصفوف المتعاقبة */
+}
+
+/* Buttons */
+.dark-mode .btn {
+    background-color: #3a3a3a; /* خلفية الأزرار الداكنة */
+    color: #e0e0e0; /* لون النص الفاتح */
+    border: 1px solid #555; /* إطار داكن */
+    padding: 10px 20px;
+
+    cursor: pointer;
+}
+
+.dark-mode .btn:hover {
+    background-color: #4b4b4b; /* تغيير لون الخلفية عند التمرير */
+}
+
+/* Forms */
+.dark-mode input, .dark-mode select, .dark-mode textarea {
+    background-color: #555; /* خلفية الداكنة لعناصر الإدخال */
+    color: #e0e0e0; /* لون النص الفاتح */
+    border: 1px solid #555; /* إطار داكن */
+}
+
+.dark-mode input:focus, .dark-mode select:focus, .dark-mode textarea:focus {
+    border-color: #888; /* تغيير لون الإطار عند التركيز */
+}
+
+/* Links */
+.dark-mode a {
+    color: #383838; /* لون الروابط الفاتحة */
+}
+
+.dark-mode a:hover {
+    color: #a0cfff; /* لون الروابط عند التمرير */
+}
+ a:hover {
+    color: #a0cfff; /* لون الروابط عند التمرير */
+}
+/* Footer */
+.dark-mode .footer {
+    background-color: #1a1a1a; /* خلفية الفوتر الداكنة */
+    color: #cccccc; /* لون النص */
+    border-top: 1px solid #444; /* خط علوي */
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Make buttons smaller on mobile */
+    .dark-mode .dt-button,
+    .dark-mode .buttons-pdf,
+    .dark-mode .buttons-html5,
+    .dark-mode .btn-export {
+        padding: 8px 15px; /* Smaller padding for mobile */
+        font-size: 14px; /* Smaller font size */
+        border-radius: 3px; /* Slightly smaller border radius */
+    }
+    
+    /* Adjust overall layout for mobile */
+    .container {
+        padding: 10px; /* Less padding around the content */
+    }
+
+    /* Make tables fit mobile screen */
+    .dark-mode table {
+        width: 100%; /* Ensure table fits the mobile screen */
+        font-size: 14px; /* Smaller text for mobile */
+    }
+
+    /* Adjust headers for mobile */
+    .dark-mode .header {
+        font-size: 18px; /* Smaller header text */
+    }
+
+    /* Adjust sidebar for mobile */
+    .dark-mode .sidebar {
+        font-size: 14px; /* Smaller sidebar text */
+        padding: 10px; /* Reduce padding */
+    }
+
+    /* Adjust footer for mobile */
+    .dark-mode .footer {
+        font-size: 12px; /* Smaller footer text */
+    }
+
+    /* Adjust forms for mobile */
+    .dark-mode input, 
+    .dark-mode select, 
+    .dark-mode textarea {
+        font-size: 14px; /* Smaller form input text */
+
+    }
+    .input-box input{
+      font-size: .7em;
+    }
+    .remember-forgot a {
+
+      font-size: .85em;
+    }
+    .dashboard-text1{
+      font-size: .85em;
+    }
+}
+
+/* Optional: Change link color */
+a:hover {
+    text-decoration: none; /* إذا كنت ترغب في إضافة خط عند التمرير فوق الرابط */
+
+}
+.user-login {
+    width: 100px; /* عرض الصورة */
+    height: 100px; /* ارتفاع الصورة */
+    border-radius: 50%; /* لجعل الصورة دائرية */
+    object-fit: cover; /* لضمان أن الصورة تتناسب داخل الإطار */
+    border: 2px solid #ccc; /* إضافة إطار حول الصورة (اختياري) */
+    display: block; /* للتأكد من أن الصورة تظهر كعنصر مستقل */
+    margin: 0 auto; /* لتمركز الصورة في النص */
+}
+
+/* Optional: Add hover effect */
+.user-login:hover {
+    border-color: #80bfff; /* تغيير لون الإطار عند التمرير */
+}
+
+.dark-mode #ic {
+    color: #ffffff; /* لون الروابط الفاتحة */
+}
+.dark-mode label {
+  color: #333;
+}
